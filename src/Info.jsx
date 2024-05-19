@@ -1,5 +1,7 @@
 import React from "react";
-
+import myPhoto from "./assets/zaid.jpg"
+import emailLogo from "./assets/Mail.png"
+import linkedInLogo from "./assets/linkedin.png"
 export default function Info(){
     const email = "zaid.nissar@ucalgary.ca"
     const subject = ""
@@ -14,13 +16,13 @@ export default function Info(){
       };
     return(
         <main>
-            <img id="portrait" src="src/assets/zaid.jpg"/>
+            <img id="portrait" src={myPhoto}/>
             <h1>Zaid Nissar</h1>
             <h3>Computer Scientist</h3>
             <small>My Buisness Card</small>
             <div id="btn-container">
-                <button onClick={handleEmailClick} id="mail"><img src="src/assets/Mail.png"/>Email</button>
-                <button onClick={handleLinkedInClick} id="linkedin"><img src="src/assets/linkedin.png"/>Linkedin</button>
+                <button onClick={handleEmailClick} id="mail"><img src={emailLogo}/>Email</button>
+                <button onClick={handleLinkedInClick} id="linkedin"><img src={linkedInLogo}/>Linkedin</button>
             </div>
         </main>
     )
