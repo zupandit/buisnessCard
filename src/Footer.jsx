@@ -1,6 +1,6 @@
 import React from "react";
-import instagramIcon from './assets/Instagram Icon.png';
-import githubIcon from './assets/GitHub Icon.png';
+import instagramIcon from '../src/assets/Instagram Icon.png';
+import githubIcon from '../src/assets/GitHub Icon.png';
 
 export default function Footer(){
     return(
